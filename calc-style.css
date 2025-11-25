@@ -1,0 +1,75 @@
+/* Full black background */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator box */
+.calculator {
+    width: 300px;
+    padding: 20px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
+}
+
+/* Display screen */
+#display {
+    height: 70px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    font-size: 2.4rem;
+    border-radius: 10px;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Button grid alignment */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Default button style */
+.btn {
+    padding: 18px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+/* ===== ORANGE BUTTONS ===== */
+.operator,
+#clear,
+.equal {
+    background: #ff9500;
+    color: #000;
+    font-weight: bold;
+}
+
+/* ORANGE hover: glow + brighten */
+.operator:hover,
+#clear:hover,
+.equal:hover {
+    background: #ffa733;
+    box-shadow: 0 0 12px #ff9500;
+    transform: translateY(-3px);
+}
+
+/* Normal buttons hover */
+.btn:hover {
+    background: #444;
+}
